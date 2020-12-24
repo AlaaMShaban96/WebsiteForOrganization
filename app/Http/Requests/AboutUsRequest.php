@@ -13,7 +13,7 @@ class AboutUsRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,8 +23,40 @@ class AboutUsRequest extends FormRequest
      */
     public function rules()
     {
+        $arr = explode('@', $this->route()->getActionName());
+        $method = $arr[1];  // The controller method
+    
+       
+        switch ($method) {
+            case 'store':
+                return [
+                    'description'=>['required', 'max:150'],
+                    'details'=>['required'],
+                    'titel' => ['required', 'string', 'max:40'], 
+                    'image'=>['required'],
+                    'cover'=>['required'],
+                ];
+                break;
+                
+            case 'update':
+                return [
+                    'description'=>['required', 'max:150'],
+                    'details'=>['required'],
+                    'titel' => ['required', 'string', 'max:40'], 
+                ];
+                break;
+         }
+    }
+    public function messages()
+    {
         return [
-            //
+            'description.required' => 'يجب كتابة تشرح للنشاط', 
+            'description.max' => 'يجب تشرح النشاط لا يتجاوز  150 حرف', 
+            
+            'details.required' => 'يجب كتابة تفاصيل النشاط', 
+
+            'titel.required' => 'يجب كتابة كلمة بداية ', 
+            'image.required' => 'يجب تحميل صورة  للمشروع', 
         ];
     }
 }

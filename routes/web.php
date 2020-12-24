@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TeamController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+// Route::resource('/team', 'TeamController')->route('team');
+Route::group(['prefix' => 'dashboard'], function () {
+    Route::get('/', function () {
+        return view('dashboard');
+    })->name('team');
+    Route::get('/team',[TeamController::class,'index'])->name('team');
+
 });
