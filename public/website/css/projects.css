@@ -1,0 +1,20 @@
+.header--2 {
+  height: 60vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.section-hero-projects {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.section-hero-projects h1 {
+  text-align: center;
+}
+/*# sourceMappingURL=projects.css.map */

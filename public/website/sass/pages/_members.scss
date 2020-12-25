@@ -1,0 +1,26 @@
+.section-members {
+  padding: 5rem 0 0 0;
+  background-color: $color-grey-light-1;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+
+  .section-members__content {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    grid-gap: 4rem;
+    margin-bottom: 8rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 6rem;
+      margin: auto;
+      width: 50rem;
+      margin-bottom: 8rem;
+    }
+  }
+}

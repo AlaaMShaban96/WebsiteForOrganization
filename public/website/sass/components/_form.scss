@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-flow: nowrap column;
+  &__input {
+    @extend %form_style;
+    transition: all 0.2s;
+    &::placeholder {
+      font-size: 1.4rem;
+      font-family: "Almarai", sans-serif;
+    }
+
+    &:focus {
+      border-bottom: 0.5rem solid $primary-color;
+    }
+    &:invalid {
+      border-bottom: 0.5rem solid red;
+    }
+  }
+
+  &__text-area {
+    @extend %form_style;
+    resize: none;
+    font-size: 1.4rem;
+    font-family: "Almarai", sans-serif;
+  }
+}

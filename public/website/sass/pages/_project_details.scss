@@ -1,0 +1,19 @@
+.project-blog {
+  height: 100%;
+  &__img {
+    //height: 50rem;
+    //width: 80%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 2rem auto;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+}

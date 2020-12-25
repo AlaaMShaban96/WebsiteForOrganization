@@ -1,0 +1,73 @@
+.section-login {
+  background-image: linear-gradient(
+      to right,
+      rgba($primary-color-light, 0.8),
+      rgba($primary-color-dark, 0.8)
+    ),
+    url("../img/logo-white.png");
+  background-size: contain;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login {
+  //height: 60vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //justify-content: center;
+  background-color: $color-grey-dark;
+  padding: 2rem 1.6rem;
+  border-radius: 0.8rem;
+  animation-name: fad;
+  //animation-delay: 5s;
+  animation-duration: 15s;
+  //animation-iteration-count: infinite;
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+
+    @extend %form_style;
+    margin: 0.8rem 0;
+    padding: 1.6rem 1rem;
+    transition: all 0.2s;
+    &::placeholder {
+      font-size: 1.4rem;
+      font-family: "Almarai", sans-serif;
+    }
+
+    &:focus {
+      border-bottom: 0.5rem solid $primary-color;
+    }
+  }
+  button {
+    font-family: "Almarai";
+
+    &:focus {
+      border-bottom: none;
+    }
+  }
+}
+
+@keyframes fad {
+  from {
+    margin-top: 200rem;
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}

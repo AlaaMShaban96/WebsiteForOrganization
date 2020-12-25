@@ -1,0 +1,16 @@
+.about {
+  &__img {
+    width: 80%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin: 2rem auto;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+  }
+}

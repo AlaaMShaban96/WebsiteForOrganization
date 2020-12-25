@@ -1,0 +1,30 @@
+//Sort is very important don't try to change it , it took several hours to fix this simple stupid bug don't do the same
+@import "base/variables";
+@import "abstract/mixins";
+
+//base
+
+@import "base/base";
+
+//abstract
+@import "abstract/utilities";
+@import "abstract/container";
+@import "typography/typography";
+//Pages
+@import "pages/home";
+@import "pages/members";
+@import "pages/projects";
+@import "pages/project_details";
+@import "pages/login";
+@import "pages/projects";
+@import "pages/about";
+
+//components
+@import "components/btn";
+@import "components/navigation";
+@import "components/header__navigation";
+@import "components/card";
+@import "components/form";
+@import "components/card-info";
+@import "components/footer";
+@import "components/social-media";

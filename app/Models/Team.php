@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'description','name','titel','image','facebook','linkedin','twitter'
+       
+    ];
+
 }

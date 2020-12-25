@@ -33,7 +33,7 @@ class ProjectRequest extends FormRequest
                     'description'=>['required', 'max:150'],
                     'details'=>['required'],
                     'name' => ['required', 'string', 'max:40'], 
-                    'image'=>['required'],
+                    'file'=>['required'],
                 ];
                 break;
                 
@@ -55,7 +55,7 @@ class ProjectRequest extends FormRequest
             'details.required' => 'يجب كتابة تفاصيل للمشروع', 
 
             'name.required' => 'يجب كتابة اسم للمشروع', 
-            'image.required' => 'يجب تحميل صورة  للمشروع', 
+            'file.required' => 'يجب تحميل صورة  للمشروع', 
         ];
     }
 }
