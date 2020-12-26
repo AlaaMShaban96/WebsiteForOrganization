@@ -623,8 +623,8 @@ body {
   border-radius: 0.8rem;
   -webkit-animation-name: fad;
           animation-name: fad;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .form-login__img {

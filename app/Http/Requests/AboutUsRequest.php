@@ -33,8 +33,7 @@ class AboutUsRequest extends FormRequest
                     'description'=>['required', 'max:150'],
                     'details'=>['required'],
                     'titel' => ['required', 'string', 'max:40'], 
-                    'image'=>['required'],
-                    'cover'=>['required'],
+                    'file'=>['required'],
                 ];
                 break;
                 

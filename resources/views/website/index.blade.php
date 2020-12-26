@@ -1,23 +1,20 @@
 @extends('website.layout.master')
-      
+@include('website.layout.component.header')
+
  @section('content')
- <section class="who-we-are container--row u-margin-top-big" data-aos="fade-left" >
+ {{-- <section class="who-we-are container--row u-margin-top-big" data-aos="fade-left" >
   <div class="who-we-are__image" >
-    <img src="{{asset('website/img/Who-we-are-image.jpg')}}" alt="" />
+    <img src="{{asset("$aboutUs->image")}}" alt="" />
 
  
   </div>
   <div class="who-we-are__text" >
-    <h2 class="secondary-heading">من نحن</h2>
+    <h2 class="secondary-heading">{{$aboutUs->titel}}</h2>
     <p class="who-we-are__paragraph">
-      هذا النص هو مثال لنص اخر هذا النص هو مثال لنص اخر هذا النص هو مثال
-      لنص اخر هذا النص هو مثال لشنص اخر هذا النص هذا النص هو مثال لنص اخر
-      هذا النص هو مثال لنص اخر هذا النص هو مثال لنص اخر هذا النص هو مثال
-      لشنص اخر هذا النص هذا النص هو مثال لنص اخر هذا النص هو مثال لنص اخر
-      هذا النص هو مثال لنص اخر هذا النص هو مثال لشنص اخر هذا النص
+     {{$aboutUs->description}}
     </p>
   </div>
- </section>
+ </section> --}}
 
 <section class="container--row u-margin-top-big" data-aos="fade-left">
   <h2 class="primary-heading u-centered ">مشاريعنا</h2>  
@@ -64,83 +61,7 @@
       </div>
       <!--./team-member-->
     @endforeach
-    
-
-    {{-- <div class="team-member card-info">
-      <div class="team-member__image card-info__img">
-        <img
-          {{asset('img/Breaking-bad')}}-gus-2.jpg"
-        />
-      </div>
-      <div class="card-info__text">
-      <h2 class="team-member__name card-info__name">إسم الموظف</h2>
-      <span class="team-member__title card-info__title">الوظيفة</span>
-      <div class="card-info__social-media social-media">
-        <a href="#" class="card-info__link social-media__link">
-        <img
-          {{asset('img/svg/facebook-')}}circle.svg"
-          alt=""
-          class="social-media__icon card-info__icon"
-        >
-        </a>
-        <a href="#" class="social-media__link card-info__link u-margin-left-right">
-          <img
-            {{asset('img/svg/twitter-')}}circle.svg"
-            alt=""
-            class="social-media__icon card-info__icon"
-          >
-          </a>
-          <a href="#" class="social-media__link card-info__link">
-            <img
-              {{asset('img/svg/linkedin-')}}circle.svg"
-              alt=""
-              class="social-media__icon card-info__icon"
-            >
-            </a>
-      </div>
-      <!--./card-info__social-media-->
-    </div> 
-    <!--./card-info__text-->
-    </div>
-    <!--./team-member-->--}}
-
-    {{-- <div class="team-member card-info">
-      <div class="team-member__image card-info__img">
-        <img
-          {{asset('img/Breaking-')}}bad-WW.jpg"
-        />
-      </div>
-      <div class="card-info__text">
-      <h2 class="team-member__name card-info__name">إسم الموظف</h2>
-      <span class="team-member__title card-info__title">الوظيفة</span>
-      <div class="card-info__social-media social-media">
-        <a href="#" class="card-info__link social-media__link">
-        <img
-          src="img/svg/facebook-circle.svg"
-          alt=""
-          class="social-media__icon card-info__icon"
-        >
-        </a>
-        <a href="#" class="social-media__link card-info__link u-margin-left-right">
-          <img
-            src="img/svg/twitter-circle.svg"
-            alt=""
-            class="social-media__icon card-info__icon"
-          >
-          </a>
-          <a href="#" class="social-media__link card-info__link">
-            <img
-              src="img/svg/linkedin-circle.svg"
-              alt=""
-              class="social-media__icon card-info__icon"
-            >
-            </a>
-      </div>
-      <!--./card-info__social-media-->
-      </div>
-    <!--./card-info__text-->
-    </div>
-    <!--./team-member--> --}}
+  
 
 <!--./our-team__content-->
   </div>

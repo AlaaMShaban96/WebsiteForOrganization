@@ -23,7 +23,7 @@
   @endif
   <div class="container-fluid">
 
-    <div class="row">
+    <div class="row" style="text-align: right;">
       <div class="col-lg-6 col-md-12">
         <div class="card">
           <div class="card-header card-header-tabs card-header-primary">
@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="card-body">
+          <div class="card-body" style="text-align: right;">
             <div class="tab-content">
 
               <div class="tab-pane active" id="boos">
@@ -118,7 +118,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-md-12">
-        <div class="card">
+        <div class="card" style="text-align: right;">
           <div id="card-header" class="card-header card-header-success">
             <h4 class="card-title">الموظفين</h4>
             <p class="card-category">ادراج بيانات موظف في الموقع</p>
@@ -218,7 +218,7 @@
               </div>
               </div>
               
-              <button type="submit" id="submit-button" class="btn btn-success pull-right check">Create Profile</button>
+              <button type="submit" id="submit-button" class="btn btn-success pull-right check">اضافة  موظف</button>
             </form>
           </div>
         </div>

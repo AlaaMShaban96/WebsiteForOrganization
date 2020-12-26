@@ -7,7 +7,6 @@
     @include('website.layout.include.style.style')
   </head>
   <body>
-    @include('website.layout.component.header')
     <main>
       @yield('content')
     </main>
